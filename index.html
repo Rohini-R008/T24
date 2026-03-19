@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animations UI</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-900 text-white font-sans">
+
+<div class="text-center py-10">
+  <h1 class="text-3xl font-bold">Animations & UI Feedback</h1>
+  <p class="text-gray-400 text-sm mt-2">
+    Hover, click, and interact with the elements below
+  </p>
+</div>
+
+<section class="max-w-6xl mx-auto px-6">
+  <h2 class="mb-4 font-semibold">Built-in Animations</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+    <div class="card">
+      <div class="loader-spin"></div>
+      <p>animate-spin</p>
+    </div>
+
+    <div class="card">
+      <div class="relative">
+        <span class="ping"></span>
+        <span class="dot-green"></span>
+      </div>
+      <p>animate-ping</p>
+    </div>
+
+    <div class="card">
+      <div class="pulse-box"></div>
+      <p>animate-pulse</p>
+    </div>
+
+    <div class="card">
+      <div class="bounce-ball"></div>
+      <p>animate-bounce</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 mt-10">
+  <h2 class="mb-4 font-semibold">Button Animations</h2>
+
+  <div class="flex flex-wrap gap-3">
+
+    <button class="btn bg-blue-500 hover:scale-110">Scale Effect</button>
+
+    <button class="btn bg-purple-500 hover:scale-110 hover:shadow-xl">
+      Shadow + Scale
+    </button>
+
+    <button class="btn bg-green-500 hover:bg-green-600 transition">
+      Color Transition
+    </button>
+
+    <button class="btn bg-orange-500 hover:rotate-12 transition-transform">
+      Rotate Effect
+    </button>
+
+    <button class="btn bg-pink-500 hover:-translate-y-1">
+      Lift Effect
+    </button>
+
+    <button class="btn bg-cyan-500 hover:scale-110 hover:rotate-3">
+      Combined
+    </button>
+
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 mt-10">
+  <h2 class="mb-4 font-semibold">Card Animations</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="card hover:-translate-y-2 hover:shadow-xl transition">
+      Lift & Shadow
+    </div>
+
+    <div class="card group">
+      <div class="bg-green-500 w-10 h-10 rounded mb-2 
+                  group-hover:rotate-12 group-hover:scale-110 transition"></div>
+      Scale & Rotate
+    </div>
+
+    <div class="card border border-transparent hover:border-purple-500 transition">
+      Border Reveal
+    </div>
+
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 mt-10">
+  <h2 class="mb-4 font-semibold">Notification Badges</h2>
+
+  <div class="flex gap-6">
+
+    <div class="relative icon-box">
+      🔔
+      <span class="badge-red"></span>
+    </div>
+
+    <div class="relative icon-box">
+      💬
+      <span class="badge-green"></span>
+    </div>
+
+    <div class="relative icon-box">
+      📧
+      <span class="badge-blue"></span>
+    </div>
+
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 mt-10">
+  <h2 class="mb-4 font-semibold">Loading States</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="card animate-pulse">
+      <div class="h-4 bg-gray-600 mb-2"></div>
+      <div class="h-4 bg-gray-600 w-3/4"></div>
+    </div>
+
+    <button class="btn bg-blue-500 flex items-center gap-2">
+      <span class="loader-spin small"></span>
+      Loading...
+    </button>
+
+    <div class="card flex gap-2 justify-center">
+      <span class="dot delay-0"></span>
+      <span class="dot delay-150"></span>
+      <span class="dot delay-300"></span>
+    </div>
+
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 mt-10 pb-10">
+  <h2 class="mb-4 font-semibold">Staggered Animations</h2>
+
+  <div class="grid md:grid-cols-4 gap-4">
+
+    <div class="stagger delay-0">delay-0</div>
+    <div class="stagger delay-150">delay-150</div>
+    <div class="stagger delay-300">delay-300</div>
+    <div class="stagger delay-500">delay-500</div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
